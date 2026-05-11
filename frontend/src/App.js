@@ -25,6 +25,7 @@ const CLASSES = (() => {
   }
   return out;
 })();
+//async function api
 
 async function api(path, opts = {}) {
   const res = await fetch(`${API}${path}`, {
@@ -75,7 +76,7 @@ function SchoolIllustration() {
     </svg>
   );
 }
-//Modal function
+//Modal Function
 
 function Modal({ message, onConfirm, onCancel, confirmLabel = "Save", cancelLabel = "Cancel" }) {
   return (
@@ -276,7 +277,7 @@ function WelcomeFeature({ label, icon }) {
     </div>
   );
 }
-
+//To select page role for teacher or admin
 function PageRoleSelect({ go }) {
   return (
     <main className="min-h-screen bg-blue-50 flex flex-col items-center justify-center px-4 relative overflow-hidden">
